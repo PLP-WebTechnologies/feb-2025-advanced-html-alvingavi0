@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Image from Pexels</h2>
+    <img src="https://www.pexels.com/photo/scenic-horseback-ride-in-northern-mindanao-31198323/" alt="Beautiful Landscape" width="600">
+
+    <!-- Table with Contact Information -->
+    <h2>Contact List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Deng Tewodros</td>
+                <td>123 Addis Street, City</td>
+                <td>+251456789</td>
+                <td>Deng_wodros@example.com</td>
+            </tr>
+            <tr>
+                <td>Mike Mukisa</td>
+                <td>789 Road, Luganda</td>
+                <td>+256142333</td>
+                <td>mikluganda@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Mwangeka</td>
+                <td>321 Serengeti, TTz</td>
+                <td>+255425176</td>
+                <td>emineka@example.com</td>
+            </tr>
+            <tr>
+                <td>Chris Omondi</td>
+                <td>654 Lane, Nairobi District</td>
+                <td>+254795785935</td>
+                <td>chrisomosh@example.com</td>
+            </tr>
+          <tr>
+                <td>Tarique Habibi</td>
+                <td>251 Tunisia, Sousse District</td>
+                <td>+216795785935</td>
+                <td>Habibtarique@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+            <option value="">-- Select --</option>
+            <option value="KENYA">Kenya</option>
+            <option value="UGANDA">Uganda</option>
+            <option value="TANZANIA">Tanzania</option>
+            <option value="ETHOPIA">Ethopia</option>
+        </select><br><br>
+
+        <!-- Radio Buttons (Gender) -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes (Interests) -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
